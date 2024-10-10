@@ -1,0 +1,37 @@
+{
+  "globalSettings": {
+    "landingPage":"/FolderPage"
+  },
+  "mainpageSettings": {
+    "heading":"File Portal",
+    "description":  "取引先企業様、関連企業様とのファイルポータルシステム",
+    "imageSrc":  "https:/pchristensenb.github.io/template2.0/img/custom/sidebar-image.jpeg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+    "primaryButtonUrl":  "https://box.dev",
+    "primaryButtonText":  "Get Started today",
+    "features":  ["ファイルのメール添付を廃止", "容量無制限のストレージ", "アカウントなしでもファイル交換可能"],
+    "testimonial":  {
+      "quote": "file portal test",
+      "customerName": "Aaron Levie",
+      "customerCompany": "Box Inc."
+   }
+  },
+
+  "loginSettings": {
+    "signInMessage":"Sign in to File Portal",
+    "logoLinkURL":"",
+    "signInButtonText":"Sign In"
+  },
+  
+  
+
+  "navigation": [
+    {
+      "page": "FolderPage",
+      "title": "B社様フォルダー"
+    },
+    {
+      "page": "PreviewPage",
+      "title": "C社様フォルダー"
+    } 
+  ]
+}

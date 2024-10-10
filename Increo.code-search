@@ -1,0 +1,23 @@
+# Query: Increo
+# Including: ./box/box-custom-portal-demo
+# ContextLines: 1
+
+4 件の結果 - 2 ファイル
+
+box • box-custom-portal-demo/public/config.json:
+   6    "mainpageSettings": {
+   7:     "heading":"Accelerate your finances with Increo Financial",
+   8      "description":  "Save more money by using one of our expert advisors. They know the tricks so you don't have to.",
+
+  13      "testimonial":  {
+  14:       "quote": "With Increo Financial, we have been able to triple our monetary returns allowing us to invest more in our growth and employees.",
+  15        "customerName": "Aaron Levie",
+
+  20    "loginSettings": {
+  21:     "signInMessage":"Sign in to File Portal",
+  22      "logoLinkURL":"",
+
+box • box-custom-portal-demo/src/pages/header.js:
+  90    const defaultLogoLink = (
+  91:     [<LogoLink key="logo" href='/index'>A Company File Portal</LogoLink>]
+  92    );
