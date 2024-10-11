@@ -22,7 +22,7 @@ const TextColumn = styled(Column)(props => [
 export default (props) => {
   const [token, setToken] = useState("");
   //storing variables in the front end is not secure. you will want to grab this value from a database for production
-  let folderID = process.env.REACT_APP_BOX_UPLOADER_FOLDER_ID
+  let folderID = process.env.REACT_APP_BOX_CONTENT_UPLOADER_FOLDER_ID
 
   useEffect(() => {
     //using session storage is not secure. you will want to change this functionality for production

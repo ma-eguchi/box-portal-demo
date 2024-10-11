@@ -73,7 +73,6 @@ export default () => {
                     {loading ? <img src={loadingGif} width='24' height='24' alt='loading'/> : <LoginIcon className="icon" />}
                     <span className="text">Sign In</span>
                   </SubmitButton>
-                  <span style={{ color: 'red', paddingTop: '20px', display: 'inline-block' }}> NOTE: This application is to demonstrate the art of the possible. It is not production ready, and full authentication has not been implemented. Please conduct your own architecture and security reviews before deploying code.</span>
                 </Form>
               </FormContainer>
             </MainContent>
