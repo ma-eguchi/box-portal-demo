@@ -109,5 +109,5 @@
   "devDependencies": {
     "typescript": "^5.4.5"
   },
-  "proxy": "https://box-portal-demo-five.vercel.app"
+  "proxy": "http://localhost:3000"
 }
