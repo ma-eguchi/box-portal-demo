@@ -78,7 +78,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   
 const loginStateURL = sessionStorage.getItem('token')==null?"/pages/LoginPage":"/LogoutPage"
-const loginStateLabel = sessionStorage.getItem('token')==null?"Login":"Logout"
+const loginStateLabel = sessionStorage.getItem('token')==null?"ログイン":"ログアウト"
 const navigation =getConfigValues('navigation');
 const location = useLocation();
 const page = location.pathname.substring(location.pathname.lastIndexOf('/')+1);

@@ -23,6 +23,7 @@ async function findBoxUserByEmail(client, email) {
             throw new Error('No user found with the provided email.');
         }
         // Assuming the first match should be the user
+
         return users.entries[0].id;
     } catch (error) {
         console.error('Failed to find user by email:', error);
@@ -37,6 +38,7 @@ async function getUserAccessToken(client, userId) {
         const userClient = sdk.getAppAuthClient('user', userId);
         const tokenInfo = await userClient.exchangeToken(['base_explorer','item_preview', 'item_download', 'item_rename', 'item_upload']);
         // const tokenInfo = await userClient.exchangeToken(['base_explorer','item_preview', 'item_download', 'item_rename', 'item_upload', 'ai.readwrite']);
+        console.log("token" + tokenInfo);
         return tokenInfo.accessToken;
     } catch (error) {
         console.error('Failed to get user access token:', error);

@@ -8,6 +8,7 @@ import imageSrc from "images/professional-illustration.svg";
 import logoURL from "images/platform/logo.png";
 import Header from "pages/header.js";
 import { getConfigValues } from "./helper";
+import { useLocation } from "react-router-dom";
 
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center `;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
@@ -22,7 +23,7 @@ const TextColumn = styled(Column)(props => [
 export default (props) => {
   const [token, setToken] = useState("");
   //storing variables in the front end is not secure. you will want to grab this value from a database for production
-  let folderID = process.env.REACT_APP_BOX_CONTENT_UPLOADER_FOLDER_ID
+  //const folderID = process.env.REACT_APP_BOX_CONTENT_UPLOADER_FOLDER_ID
 
   useEffect(() => {
     //using session storage is not secure. you will want to change this functionality for production
@@ -35,6 +36,9 @@ export default (props) => {
     }
   }, []);
 
+  const search = useLocation().search;
+  const query = new URLSearchParams(search);
+  const folderID = query.get('folderId')
   return (
     <AnimationRevealPage>
       <Header />

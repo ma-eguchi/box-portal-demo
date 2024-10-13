@@ -26,11 +26,11 @@
 
   "navigation": [
     {
-      "page": "FolderPage",
+      "page": "FolderPage?folderId=288620794937",
       "title": "B社様フォルダー"
     },
     {
-      "page": "PreviewPage",
+      "page": "FolderPage?folderId=288617217153",
       "title": "C社様フォルダー"
     } 
   ]
